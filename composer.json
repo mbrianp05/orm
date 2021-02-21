@@ -1,0 +1,21 @@
+{
+    "name": "mbrianp/orm",
+    "description": "An ORM",
+    "type": "library",
+    "require": {
+        "mbrianp/dic": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian",
+            "email": "mbrianp05@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Mbrianp\\FuncCollection\\ORM\\": "lib/Mbrianp/ORM"
+        }
+    }
+}

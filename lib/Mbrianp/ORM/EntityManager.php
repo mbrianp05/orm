@@ -106,7 +106,7 @@ class EntityManager
     protected function insert(object $entity): bool
     {
         $metadataResolver = new EntityMetadataResolver($entity);
-        $table = $metadataResolver->getSchema()->table;
+        $table = $metadataResolver->getTableName();
 
         return $this->driver->insert($table, $this->resolveRealArrayValues($entity));
     }
